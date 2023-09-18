@@ -2,153 +2,99 @@ h1{
     color: bisque;
     text-transform: uppercase;
 }
-.item{
-    width: 5px;
-    height: 5px;
-    padding: 30px 30px;
-    margin: 5px 5px;
-    
-}
 
-.item1{
-    color: aqua;
-    background-color: black;
-}
-
-.item2{
-    color: rgb(64, 255, 0);
-    background-color: rgb(186, 23, 23);
-}
-
-.item3{
-    color: rgb(255, 94, 0);
-    background-color: rgb(0, 23, 99);
-    
-}
-
-.item4{
-    color: aqua;
-    background-color: rgb(198, 28, 158);
-}
-
-.item5{
-    color: aqua;
-    background-color: rgb(188, 227, 36);
-}
-
-.item6{
-    color: rgb(5, 15, 15);
-    background-color: rgb(58, 177, 140);
-}
-.item7{
-    color: rgb(5, 15, 15);
-    background-color: rgb(228, 125, 41);
-}
-.item8{
-    color: rgb(5, 15, 15);
-    background-color: rgb(32, 235, 21);
-}
-.item9{
-    color: rgb(5, 15, 15);
-    background-color: rgb(224, 105, 36);
-}
-.item10{
-    color: rgb(5, 15, 15);
-    background-color: rgb(190, 31, 230);
-}
-.item11{
-    color: rgb(5, 15, 15);
-    background-color: rgb(184, 11, 37);
-}.item12{
-    color: rgb(5, 15, 15);
-    background-color: rgb(193, 41, 112);
-}
-.item1{
-    /* position: absolute; */
-    
-    
-    bottom:0px;
-    text-align: center;
-    justify-content: center;
-    
-
-    
-    
-}
-.item6{
-    /* position: sticky; */
-    top: 0px;
-}
-.item12{
-    /* position: absolute; */
-    
-    right: 0;
-    margin-bottom: 0;
-}
-p{
-    
-    top: 0px;
-}
-.top-p{
-    position:relative;
-}
 .container{
     background-color: gray;
     border: palevioletred 3px solid;
     display: grid;
-    gap: 20px;
-    background-color: rgb(17, 87, 87);
-    color: aliceblue;
-     /* grid-auto-rows: 100px;
-     grid-auto-columns: 100px; */
-     /* for seperating use  */
-     /* css units percentage or use fr to divide by ratio */
-    /* grid-template-rows:100px 100px 100px 100px 100px 100px ;
-    grid-template-columns:100px 100px 100px 100px 100px 100px; */
     grid-template-columns: minmax(200px,1fr) 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
+    gap: 10px;
 }
+p{
+    background-color: rgb(17, 87, 87);
+    color: aliceblue;
+    padding: 10px;
+}
+.outerbox{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 2fr 0.75fr;
+    grid-auto-flow: column;
 
-/* .item1{
-    grid-row-start:1 ;
-    grid-row-end:3 ;
-    grid-row: 1/2;
-    grid-column: 1/2;
-    height: 100%;
-    width: 100%;
-    gap: 0;
-    grid-column-start:1 ;
-    grid-column-end:4 ;
+}
+.box{
+    background-color: rgb(19, 78, 78);
+    color: black;
+    font-size: x-large;
+    display: grid;
+    justify-content: center;align-items: center;
+}
+.box1{
+    grid-column: span 2;
+    grid-row: 1/3;
+    justify-self: normal;
+}
+.box4{
+    grid-row: 1/3;
+}
+.layout{
+    display: grid;
+    background-color: blanchedalmond;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "h h h"
+    "s1 m s2"
+    "f f f"
+    ;
+    border: black 4px solid;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    grid-area: h;
+}
+.footer{
+    grid-area: f;
+}
+.side1{
+    grid-area: s1;
+}
+.side2{
+    grid-area: s2;
+}
+.main{
+    grid-area: m;
+}
+/* .header{
+    grid-column: span 3;
+    display: grid;
+    justify-content: center;
+    border-bottom: black 1px solid;
+}
+.footer{
+    grid-column: span 3;
+    display: grid;
+    justify-content: center;
+    border-top: black 1px solid;
+}
+.side1{
+    display: grid;
+    justify-content: center;
     
-} 
-.item2{
-    grid-row: 1/2;
-    grid-column:3/4 ;
-    height: 100%;
-    width: 100%;
+
 }
-.item3{
-    grid-row: 1/2;
-    grid-column:5/6 ;
-    height: 100%;
-    width: 100%;
+.side2{
+    display: grid;
+    justify-content: center;
+    
+
+}
+.main{
+    display: grid;
+    justify-content: center;
+    border: black 1px solid;
+    grid-row: span 4;
 } */
-/* 
-hi
-.item4{
-    grid-row: 3/4;
-    grid-column:1/6 ;
-    grid-area: 3/1/4/6;
-    height: 100%;
-    width: 100%;
-}
-.item5{
-    grid-area: 5/1/6/4;
-    height: 100%;
-    width: 100%;
-}
-.item6{
-    grid-area: 5/5/6/6;
-    height: 100%;
-    width: 100%;
-}  */
