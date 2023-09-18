@@ -1,51 +1,42 @@
-.outerbox{
-    margin: 25px;
-    height: 400px;
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
     display: flex;
-    background-color: rgb(181, 127, 61);
-    justify-content: center;
-    align-items: center;
+    justify-content: center;align-items: center;
 }
 .box{
-    width: 120px;
-    height: 120px;
-    background-color: #f76c6c;
-    color: aqua;
-    border: black 2px solid;
+    height: 50px;
+    width: 170px;
+     background-color: blueviolet;
+     transition:1s ;
+     animation: box 5s linear 7;
+     /* animation-iteration-count: 7; */
 }
-.box2{
-    flex-grow: 1;
-}
-.box1{
-    flex-shrink: 0;
-    /* flex:grow rate shrink rate basis rate; */
+@keyframes box{
+    0%{ transform: translateY(300px) rotateZ(360deg);}
+    25%{transform: translateX(-200px) rotateZ(-360deg);}
+    50%{ transform: translateX(200px ) rotateZ(-360deg);}
+    75%{transform: translateY(-300px ) rotateZ(360deg);}
+    100%{transform: translatex(-300px) rotateZ(360deg);}
 }
 
-.container{
-    display: flex;
-    background-color: black;
-    color: aliceblue;
-    flex-wrap: wrap;
+.box:hover{
+    
 }
-p{
-    margin: 5px 5px;
-}
-.para1{
-    background-color: bisque;
-    color: rgb(23, 87, 87);
-    flex: 1;
-    order: 1;
-}
-.para2{
-    background-color: rgb(210, 128, 27);
-    color: rgb(23, 87, 87);
-    flex: 1;
-    order: 3;
-}
-.para3{
-    background-color: rgb(125, 120, 26);
-    color: rgb(23, 87, 87);
-    flex: 2;
-    order: 2;
-}
-/* in css flexbox to align in main axis we need to use jcc for cross axis aic  */
+/* @keyframes box{
+    from{
+        transform: translateX(-500px) rotateZ(36000deg) translateY(-200px);
+    }
+    to{
+        transform: translateX(500px) translateY(200px);
+    }
+} */
+
+/* width: 100px;
+    background-color: #0b3e4f;
+    border: 5px solid black;
+    border-radius: 50%; */
+    /* transform:rotateZ(36000000deg); */
+    /* transform: scale(5,2); */
+     /* transform: skew(320deg); */
