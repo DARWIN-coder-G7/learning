@@ -1,30 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <style>
+        .col
+        ,.col-8,.col-4,.col-6,.col-sm-4,.col-sm-8
+        {
+            background-color: palevioletred; 
+            padding: 20px; 
+            border: 1px solid black;
+            text-align: center;
+        }
+        .row{
+            background-color: aqua;
+            padding: 10px;
+        }
+        .container{
+            background-color:gray;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-  <header >
-    <div class = "logo"><img src="./willware-removebg-preview.png" alt="" srcset=""></div>
-    <div class="brname">
-      willware technologies
+    <div class="container">
+        <h1 class="text-primary">BOOTSTRAP</h1>
+
+        <!-- vertical Allignment -->
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col-8"></div>
+            <div class="col-4"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-6"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8"></div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="row row-cols-2">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row row-cols-auto">
+            <div class="col">hit the button</div>
+            <div class="col"></div>
+            <div class="col">get me</div>
+            <div class="col"></div>
+            <div class="col">catch me if you can</div>
+        </div>
+        <div class="row row-cols-xxl-6 row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
     </div>
-    <div class="links">
-      <li ><a class="active" href="#">home</a></li>
-      <li><a href="#">ctc</a></li>
-      <li><a href="#">margin</a></li>
-      <li><a href="#">hike</a></li>
-      <li><a href="#">calci</a></li>
-    </div>
-  </header>
-    <section>
-      <h3>heading</h3>
-      <input type="text" placeholder="ctc">
-      <button>btn</button>
-      <p>display <span>result</span></p>
-    </section>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
 </body>
 </html>
